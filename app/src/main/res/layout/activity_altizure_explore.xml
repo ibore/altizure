@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:theme="@style/ToolbarTheme" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <WebView android:id="@id/altizure_explore_webview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+    <fragment android:name="com.everest.altizure.NavDrawerFragment" android:layout_gravity="start" android:id="@id/navdrawer" android:layout_width="@dimen/nav_drawer_width" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

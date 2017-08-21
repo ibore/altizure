@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <android.support.v7.widget.RecyclerView android:id="@id/mission_library_recyclerview" android:background="@color/cardview_dark_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize" />
+        <include layout="@layout/toolbar_solid" />
+    </FrameLayout>
+    <fragment android:name="com.everest.altizure.NavDrawerFragment" android:layout_gravity="start" android:id="@id/navdrawer" android:layout_width="@dimen/nav_drawer_width" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>
